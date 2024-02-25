@@ -1,0 +1,365 @@
+* {
+    font-family: 'Times New Roman';
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.507);
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+
+.main {
+    background: rgba(0, 0, 0, 0.916);
+    position: relative;
+}
+
+.nav {
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 4vw;
+}
+
+.nav h3 {
+    font-size: 2.3vw;
+    color: white;
+    font-weight: 600;
+}
+
+.nav-part {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+.nav-part a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 400;
+    padding: 0.8vw 3vw;
+    border-radius: 10px;
+    border: 2px solid white;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.nav-part a:hover{
+    border: 2px solid black;
+    font-weight: 700;
+    color: black;
+}
+
+.nav-part a::after {
+    content: "";
+    position: absolute;
+    transition: all 1s ease;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    top: 0;
+    left: -100%;
+    z-index: -1;
+}
+
+.nav-part a:hover::after {
+    left: 0;
+}
+
+
+.page1 {
+    background: rgba(0, 0, 0, 0.916);
+    width: 100%;
+    height: 100%;
+    padding: 0vw 5vw;
+    position: relative;
+}
+.page1 h1 {
+    font-size: 8vw;
+    font-weight: 600;
+    line-height: 9vw;
+    color: white;
+
+}
+
+.page1 h3 {
+    font-size: 7vw;
+    color: white;
+}
+
+.page1 #btn {
+    padding: 1vw 3vw;
+    font-size: 4vw;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.page1 #btn:hover{
+    color: black;
+    border: 2px solid black;
+}
+
+.page1 #btn::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    transition: all 1s ease;
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    top: 100%;
+    left: -50%;
+    z-index: -1;
+}
+
+.page1 #btn:hover::after {
+    top: -20%;
+
+}
+.page2{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.916);
+    min-height: 100vh;
+    padding-top: 10vh;
+    position: relative;
+   
+}
+#name-div{
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+
+}
+#name-div::-webkit-scrollbar{
+    display: none;
+}
+#name-div h1{
+    margin-left: 5vw;
+    display: inline-block;
+    font-size: 8vw;
+    /* padding-right: 4vw; */
+    color: #ffff;
+    /* animation-name: move;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 2vw - 4px));
+    }
+    
+}
+.about{
+    width: 100%;
+    min-height: fit-content;
+    padding: 5vw;
+    background: rgba(0, 0, 0, 0.916);
+    
+
+}
+#heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+}
+#heading>h1{
+    font-size: 3.5vw;
+    color: white;
+}
+#heading>#link{
+    text-decoration: none;
+    font-size: 3.5vw;
+    position: relative;
+}
+#link i{
+    font-size: 2.3vw;
+    margin-left: 2.5%;
+}
+#heading #link:nth-last-child(1){
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+#heading #link:nth-last-child(1)::after{
+    content: "";
+    width: 90%;
+    bottom: 39.5%;
+    left: -100%;
+    height: 3px;
+    transition: all 1s ease;
+    position: absolute;
+    background: white;
+}
+#heading #link:nth-last-child(1):hover::after{
+    left: 0%;
+    color: #000000;
+
+}
+.about-part {
+    height: fit-content;
+    padding: 3vw 5vw;
+    display: grid;
+}
+
+p {
+    font-size: 3vw;
+    color: #6663638e;
+}
+.skill{
+    width: 100%;
+    padding: 0vw 3vw;
+    position: relative;
+}
+.skill>h3{
+    text-align: center;
+    font-size:3vw;
+    color: white;
+    margin-bottom: 0vmax;
+}
+.skill>h3 span {
+    font-size: 3vw;
+    color: #38cdfa;
+}
+
+.skill>h5 {
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 1.4vw;
+    color: white;
+}
+.box h4 {
+    font-size: 3vw;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    padding:0vw 4vw;
+    font-weight: 500;
+    margin-top: 2vw;
+    margin-bottom: 1.6vw;
+}
+.box{
+    padding: 0vw 5vw;
+}
+.box img {
+    height: 5vmax;
+    margin: 0vw 1vw;
+    background-color: #fff;
+    padding: 0.5vw;
+    position: relative;
+    border-radius: 8px;
+    left: 13%;
+}
+.page3{
+    min-height: 100vh;
+    width: 100%;
+   background: rgba(0, 0, 0, 0.916);
+   position: relative;
+}
+
+.project-box{
+    width: 100%;
+    padding:4vw;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.project-box:nth-child(3){
+    flex-direction: row-reverse;
+}
+.pro-box{
+    width: 60%;
+    height: 60vh;
+    background: white;
+    border-radius: 50px;
+}
+.pro-link{
+    width: 30vw;
+    height: 60vh;
+    background: white;
+    
+}
+#seebtn{
+    position: absolute;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    left: 70%;
+    font-size: 2vw;
+    text-decoration: none;
+    padding: 1.5vw 5vw;
+    background: rgb(14, 185, 219);   
+}
+#seebtn:hover{
+    color: #000000;
+    background: white;
+}
+.page4{
+    padding: 5vw;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+.page4>h1{
+    text-align: center;
+    font-size: 8vw;
+   
+}
+.page4>h1>span{
+    position: relative;
+    overflow: hidden;
+}
+.page4>h1>span>a{
+    text-decoration: none;   
+}
+.page4>h1>#insta::after{
+    content: "";
+    width: 0%;
+    position: absolute;
+    height: 10%;
+    left: 0%;
+    top: 53%;
+    background: #fc626a;
+
+}
+.page4>h1>#insta:hover::after{
+    width: 100%;
+}
+.page4>h1>#linke::after{
+    content: "";
+    width: 0%;
+    position: absolute;
+    height: 10%;
+    left: 0%;
+    top: 53%;
+    background: #0a66c2;
+
+}
+.page4>h1>#linke:hover::after{
+    width: 100%;
+}
