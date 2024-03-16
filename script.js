@@ -29,9 +29,9 @@ ScrollTrigger.refresh();
 
 
 
-var tl = gsap.timeline()
-
-tl.from(".nav ,#logo ,#nav-link",{
+setTimeout(function mainAnimation(){
+  var tl = gsap.timeline()
+  tl.from(".nav ,#logo ,#nav-link",{
     opacity: 0,
     y: -50,
     delay: 0.4,
@@ -66,6 +66,8 @@ gsap.from("#btn",{
     duration: 0.8,
     stagger: 1
 })
+},4099)
+
 gsap.to("#name-div h1", {
   transform: "translateX(calc( -100% - 6vw - 4px))",
     scrollTrigger: {
@@ -74,6 +76,7 @@ gsap.to("#name-div h1", {
       scrub: 0.7,
     }
   })
+
 
 
 
@@ -98,3 +101,49 @@ gsap.to(".about-part>p>span",{
     color: "#ffff"
 
 })
+
+gsap.from(".page4>h1",{
+  opacity:0,
+  scrollTrigger:{
+      trigger:".page4>h1",
+      start:"top 50%",
+      end:"bottom 50%",
+      scroller:".main",
+      duration: 0.8,
+  },
+  stagger:1,
+  y:60
+})
+gsap.from(".page2 h4",{
+  opacity:0,
+  stagger:0.4,
+  scrollTrigger:{
+      trigger:".page2 h4",
+      scroller:".main",
+      start:"top 50%",
+      delay:0.2
+      
+  },
+  y:60
+
+})
+gsap.from(".page2 img",{
+  opacity:0,
+  stagger:0.2,
+  scrollTrigger:{
+      trigger:".page2 img",
+      scroller:".main",
+      start:"top 50%",
+      
+  },
+  x:60
+
+})
+function loaderAnimation(){
+  var loader = document.querySelector(".loader")
+setTimeout(function(){
+  loader.style.top="-100%"
+
+},4000)
+}
+loaderAnimation()

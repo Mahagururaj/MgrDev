@@ -1,0 +1,137 @@
+@media (max-width:700px) {
+    
+    body{
+        overflow-x: hidden;
+    }
+    
+    
+    .nav {
+        height: 10vh;
+    }
+    
+    .nav h3 {
+        font-size: 5.3vw;
+    }
+    
+    
+    .nav-part a {
+        font-size: 2.5vw;
+        padding: 0.9vw 3.5vw;
+    }
+    
+    .nav-part a:hover{
+        border: 2px solid black;
+        font-weight: 700;
+        color: black;
+    }
+    .page1 {
+        height: 25vh;
+    }
+    .page1 h1 {
+        font-size: 9vw;
+    
+    }
+    
+    .page1 h3 {
+        font-size: 9vw;
+        color: white;
+    }
+    
+    .page1 #btn {
+        padding: 1.5vw 3vw;
+        font-size: 5vw;
+        border-radius: 2vw;
+    }
+
+    .page2{
+        min-height: 60vh;
+       
+    }
+    #name-div h1{
+        font-size: 8.3vw;
+    }
+    
+    #heading>h1{
+        font-size: 5vw;
+    }
+    #heading>#link{
+        font-size: 5vw;
+    }
+    #link i{
+        font-size: 2.3vw;
+        margin-left: 2.5%;
+    }
+    .about-part {
+        height: fit-content;
+        padding: 3vw 5vw;
+        display: grid;
+    }
+    
+    p {
+        font-size: 5vw;
+
+    }
+    .skill>h3{
+        font-size:4vw;
+    }
+    .skill>h3 span {
+        font-size: 4vw;
+        color: #38cdfa;
+    }
+    
+    .skill>h5 {
+        font-size: 3.5vw;
+        color: rgb(255, 89, 6);
+    }
+    .page3{
+        min-height: 100vh;
+        position: relative;
+        padding: 0;
+       background: rgba(0, 0, 0, 0.916);
+       position: relative;
+    }
+    
+    .project-box{
+        padding:2vw 1vw;
+    }
+    .project-box .pro-box:nth-child(1){
+        margin-left: 10px;
+    }
+
+    .pro-box{
+        width: 50vw;
+        height: 50vw;
+        border-radius: 20px;
+        margin-right: 10px;
+    }
+    .pro-link{
+        width: 30vw;
+        height: 20vh;        
+    }
+    #seebtn{
+        position: absolute;
+        color: white;
+        border: 2px solid white;
+        border-radius: 20px;
+        left: 60%;
+        font-size: 4vw;
+        text-decoration: none;
+        padding: 3.5vw 9vw;
+        background: rgb(14, 185, 219);   
+    }
+    .page4{
+       margin-top: 15px;
+        height: 65vh;
+
+    }
+    .page4>h1{
+        background: none;
+        font-size: 10vw;  
+    }
+   
+    .loader>h1{
+       font-size: 8.5vw;
+
+   }
+    
+}

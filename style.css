@@ -15,18 +15,71 @@ body{
     overflow-x: hidden;
 }
 
+.loader{
+    height: 100%;
+    width: 100%;
+    background: #0b0606;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    transition: 1s all ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader>h1{
+    font-size: 5vw;
+    color: transparent;
+    background: linear-gradient(to right,rgb(254, 254, 254),rgb(92, 214, 255));
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    position: absolute;
+    opacity: 0;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+
+}
+.loader>h1:nth-child(2){
+    animation-delay: 2s;
+}
+.loader>h1:nth-child(3){
+    animation-delay: 3s;
+}
+@keyframes load {
+    0%{
+        opacity: 0;
+
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
 .main {
     background: rgba(0, 0, 0, 0.916);
     position: relative;
 }
 
 .nav {
+    background: #000;
     width: 100%;
     height: 14vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0vw 4vw;
+    z-index: 9;
 }
 
 .nav h3 {
@@ -80,8 +133,9 @@ body{
 .page1 {
     background: rgba(0, 0, 0, 0.916);
     width: 100%;
-    height: 100%;
-    padding: 0vw 5vw;
+    height: 80vh;
+    padding-top: 3vw;
+    padding-left: 3vw;
     position: relative;
 }
 .page1 h1 {
@@ -134,7 +188,6 @@ body{
     width: 100%;
     background: rgba(0, 0, 0, 0.916);
     min-height: 100vh;
-    padding-top: 10vh;
     position: relative;
    
 }
@@ -322,7 +375,7 @@ p {
 .page4{
     padding: 5vw;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     color: white;
 }
 .page4>h1{
