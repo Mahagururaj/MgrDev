@@ -320,7 +320,7 @@ p {
 }
 .box img {
     height: 5vmax;
-    margin: 0vw 1vw;
+    margin: 1vw 1vw;
     background-color: #fff;
     padding: 0.5vw;
     position: relative;

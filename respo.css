@@ -71,6 +71,9 @@
         font-size: 5vw;
 
     }
+    .box{
+        padding: 0vw 15vw;
+    }
     .skill>h3{
         font-size:4vw;
     }

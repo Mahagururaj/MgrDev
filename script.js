@@ -136,7 +136,7 @@ gsap.from(".page2 img",{
       start:"top 50%",
       
   },
-  x:60
+  x:25
 
 })
 function loaderAnimation(){
